@@ -9,7 +9,7 @@ Then, build it :
 
 Run the container:
 
-	docker run -p 8080:8080 -d --name=opensuse-systemd -v /sys/fs/cgroup:/sys/fs/cgroup:ro naviserver;
+	docker run -p 8080:8080 -d --net=host --name=opensuse-systemd -v /sys/fs/cgroup:/sys/fs/cgroup:ro naviserver;
 	docker exec -it opensuse-systemd bash
 
 It is only a test.
